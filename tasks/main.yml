@@ -126,5 +126,4 @@
   service:
     name: "dirsrv@{{ dirsrv_serverid }}"
     state: restarted
-  when: "(dirsrv_restart_condition_tls_enforcing_1 is defined and dirsrv_restart_condition_tls_enforcing_1.changed) or\
-        (dirsrv_restart_condition_tls_enforcing_2 is defined and dirsrv_restart_condition_tls_enforcing_2.changed)"
+  when: "(dirsrv_restart_condition_tls_enforcing_1 is defined and dirsrv_restart_condition_tls_enforcing_1.changed)"
